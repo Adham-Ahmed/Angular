@@ -1,4 +1,7 @@
 # Angular
+
+## lab1
+
 first angular project simple usage of angular components to implement a basic website page
 
 components used:
