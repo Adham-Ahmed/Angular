@@ -20,7 +20,7 @@ import { DepartmentModule } from './department/department.module';
     BrowserModule,
     AppRoutingModule,
     CoreModule,
-    FormsModule,
+    // FormsModule,
     // DepartmentComponent,
     StudentModule,
     DepartmentModule
