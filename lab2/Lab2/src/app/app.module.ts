@@ -7,18 +7,23 @@ import {CoreModule} from './core/core.module';
 import { StudentComponent } from './student/student.component';
 import { DepartmentComponent } from './department/department.component';
 import { FormsModule } from '@angular/forms';
+import { StudentModule } from './student/student.module';
+import { DepartmentModule } from './department/department.module';
 // import {}
 @NgModule({
   declarations: [
     AppComponent,
-    StudentComponent,
-    DepartmentComponent
+    // StudentComponent,
+    // DepartmentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CoreModule,
     FormsModule,
+    // DepartmentComponent,
+    StudentModule,
+    DepartmentModule
   ],
   providers: [],
   bootstrap: [AppComponent]
