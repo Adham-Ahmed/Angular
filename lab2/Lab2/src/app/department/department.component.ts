@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Department } from '../models/department';
 
 @Component({
   selector: 'app-department',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DepartmentComponent implements OnInit {
 
-  constructor() { }
+  dpt:Department = new Department(1,"software department","alexandria");
 
   ngOnInit(): void {
   }

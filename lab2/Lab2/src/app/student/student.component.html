@@ -1,5 +1,9 @@
-<p>student works!</p>
-<h1>
-    {{stdName}}
-</h1>
-<input type="text" [(ngModel)]="stdName">
+<div class="container bg-info">
+    <h1>Student</h1>
+    <hr>
+    <h2>{{"Id:"+std.stdId}}</h2>
+    <h2>{{"Name:"+std.stdName}}</h2>
+    <h2>{{"Age:"+std.stdAge}}</h2>
+    <input type="text" [(ngModel)]="std.stdName">    
+</div>
+<br/>
