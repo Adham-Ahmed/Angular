@@ -7,13 +7,16 @@ import { Products } from '../../model/products';
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
-  styleUrls: ['./products.component.css']
+  styleUrls: ['./productPs.component.css']
 })
 export class ProductsComponent implements OnInit {
   productsArr:Products[]=[];
+  // prd:Products;
+
 
   constructor() {
     let date=new Date();
+    // this.prd=new Products("","","",new Date(),0,0);
     this.productsArr = [
       new Products("image0.jpg","product0","a0",date,10,2),
       new Products("image1.jpg","product1","a1",date,30,3),

@@ -47,7 +47,6 @@ export class DepartmentComponent implements OnInit {
         indexToEdit=i;
       }
     }
-    //id is the id of the department to edit != index of dpt
     this.ndpt.dptId=this.dpt[indexToEdit].dptId
     this.ndpt.dptName=this.dpt[indexToEdit].dptName
     this.ndpt.dptLocation=this.dpt[indexToEdit].dptLocation

@@ -7,11 +7,13 @@ import { FormsModule } from '@angular/forms'
 
 
 @NgModule({
-  declarations: [ProductsComponent],
+  declarations: [
+    ProductsComponent
+  ],
   imports: [
     CommonModule,
     RatingModule,
-    FormsModule
+    FormsModule,
     
   ],
   exports: [

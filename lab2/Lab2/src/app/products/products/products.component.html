@@ -9,6 +9,15 @@
     <label for="Location" class="">Location</label> <br> 
     <input type="text" [(ngModel)]="ndpt.dptLocation" name="Location">   -->
 
+
+    <br> 
+    <!-- <button type="button" class="btn btn-primary m-2" (click)="add()">Add</button> -->
+    <!-- <button type="button" class="btn btn-primary m-2" (click)="confirmEdit()">Confirm Edit</button> -->
+    <hr>
+
+    <!-- <input type="text" [(ngModel)]="ndpt.dptLocation" name="Location">     -->
+
+
     <table class="table table-striped table-bordered table-hover">
         <tr colspan="2" class="bg-info">
           <th>Show Image</th>
@@ -25,7 +34,7 @@
             <td>{{item.product}}</td>
             <td>{{item.code}}</td>
             <td>{{item.available|date}}</td>
-            <td>${{item.price}}</td>
+            <td>{{item.price| currency:'USD':'symbol'}}</td>
             <td><p-rating [(ngModel)]="item.rating"></p-rating></td>
         </tr>
         
