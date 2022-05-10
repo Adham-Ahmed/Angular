@@ -27,9 +27,6 @@ export class DepartmentComponent implements OnInit {
   }
   delete(id:number)
   {
-    //id is the id of the department to delete
-    //splice takes the index to delete from dpt array (NOT THE SAME !)
-    //need to find a way to get index from id 
     let indexTodelete=0;
     for (let i = 0; i < this.dpt.length; i++) {
       const currDpt = this.dpt[i];

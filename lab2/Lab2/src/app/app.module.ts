@@ -16,6 +16,8 @@ import {SliderModule} from 'primeng/slider';
 import {PaginatorModule} from 'primeng/paginator';
 import {AccordionModule} from 'primeng/accordion';
 import {ProgressBarModule} from 'primeng/progressbar';
+import { ProductsComponent } from './products/products/products.component';
+import { ProductsModuleModule } from './products-module/products-module.module';
 
 
 
@@ -23,6 +25,7 @@ import {ProgressBarModule} from 'primeng/progressbar';
 @NgModule({
   declarations: [
     AppComponent,
+    // ProductsComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,6 +41,7 @@ import {ProgressBarModule} from 'primeng/progressbar';
     PaginatorModule,
     AccordionModule,
     ProgressBarModule,
+    ProductsModuleModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
