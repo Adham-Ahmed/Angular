@@ -9,6 +9,7 @@ import { DepartmentComponent } from './department/department.component';
 import { FormsModule } from '@angular/forms';
 import { StudentModule } from './student/student.module';
 import { DepartmentModule } from './department/department.module';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 // import { ArraySplicePipe } from './array-splice.pipe';
 // import {}
 @NgModule({
@@ -23,6 +24,7 @@ import { DepartmentModule } from './department/department.module';
     BrowserModule,
     AppRoutingModule,
     CoreModule,
+    BrowserAnimationsModule,
     // FormsModule,
     // DepartmentComponent,
     StudentModule,
