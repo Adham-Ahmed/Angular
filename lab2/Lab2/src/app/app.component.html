@@ -1,3 +1,21 @@
+<p-password></p-password>
+<p-rating [(ngModel)]="val"></p-rating>
+<p-slider [(ngModel)]="val"></p-slider>
+<p-paginator [rows]="10" [totalRecords]="100"></p-paginator>
+<!--  -->
+<p-accordion>
+    <p-accordionTab header="Header 1">
+       Content 1
+    </p-accordionTab>
+    <p-accordionTab header="Header 2">
+        Content 2
+    </p-accordionTab>
+    <p-accordionTab header="Header 3">
+        Content 3    
+    </p-accordionTab>
+</p-accordion>
+<!--  -->
+<p-progressBar [value]="val"></p-progressBar>
 <app-header></app-header>
 <app-side-bar></app-side-bar>
 <app-student></app-student>

@@ -10,25 +10,34 @@ import { FormsModule } from '@angular/forms';
 import { StudentModule } from './student/student.module';
 import { DepartmentModule } from './department/department.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-// import { ArraySplicePipe } from './array-splice.pipe';
+import {PasswordModule} from 'primeng/password';
+import {RatingModule} from 'primeng/rating';
+import {SliderModule} from 'primeng/slider';
+import {PaginatorModule} from 'primeng/paginator';
+import {AccordionModule} from 'primeng/accordion';
+import {ProgressBarModule} from 'primeng/progressbar';
+
+
+
 // import {}
 @NgModule({
   declarations: [
     AppComponent,
-    // ArraySplicePipe,
-    // StringConvertPipe,
-    // StudentComponent,
-    // DepartmentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CoreModule,
     BrowserAnimationsModule,
-    // FormsModule,
-    // DepartmentComponent,
     StudentModule,
-    DepartmentModule
+    DepartmentModule,
+    PasswordModule,
+    RatingModule,
+    FormsModule,
+    SliderModule,
+    PaginatorModule,
+    AccordionModule,
+    ProgressBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
