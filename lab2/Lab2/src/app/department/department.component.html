@@ -30,9 +30,19 @@
             </td>           
             <td>
             <button  class="btn btn-danger" (click)="delete(item.dptId)">Delete</button>
-            </td>        
+            </td>   
         </tr>
         
-        
+    
     </table>
+
+        <li *ngFor="let name of names">
+            {{name}} 
+        </li>
+        <hr>
+        <li *ngFor="let name of names|arraySplice:'a'">
+            {{name}} 
+        </li>
+
+
 </div>

@@ -10,6 +10,9 @@ export class DepartmentComponent implements OnInit {
 
   dpt:Department[]= [
   ]
+  // names:string[] =dpt.names
+ names:string[]=['adham','yasser','mahmoud','ahmed']
+
   ndpt:Department=new Department(0,"","")
   idToEdit:number = 0
 
