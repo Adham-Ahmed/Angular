@@ -23,7 +23,7 @@
        
         <tr *ngFor="let item of dpt" style="background-color:grey;">
             <td>{{item.dptId}}</td>
-            <td>{{item.dptName}}</td>
+            <td>{{item.dptName|stringConvert}}</td>
             <td>{{item.dptLocation}}</td>
             <td>
             <button class="btn btn-info" (click)="edit(item.dptId)">Edit</button>

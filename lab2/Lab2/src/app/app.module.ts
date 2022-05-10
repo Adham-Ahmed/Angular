@@ -13,6 +13,7 @@ import { DepartmentModule } from './department/department.module';
 @NgModule({
   declarations: [
     AppComponent,
+    // StringConvertPipe,
     // StudentComponent,
     // DepartmentComponent
   ],
