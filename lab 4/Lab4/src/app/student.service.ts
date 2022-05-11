@@ -17,7 +17,6 @@ export class StudentService {
 
   addStudent(dept:Student){
     this.stds.push(dept);
-    // check line above minute(1:08:36)
   }
   getStudent(id:number){
     for (let i = 0; i < this.stds.length; i++)
