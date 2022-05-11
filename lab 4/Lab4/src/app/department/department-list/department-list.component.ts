@@ -6,12 +6,10 @@ import { Department } from 'src/app/_models/department';
   selector: 'app-department-list',
   templateUrl: './department-list.component.html',
   styleUrls: ['./department-list.component.css'],
-  // providers: [DepartmentService ]
 })
 export class DepartmentListComponent implements OnInit {
 
   deptlst:Department[]=[];
-  // deptser:DepartmentService;
   constructor(public deptser:DepartmentService) { }
 
   ngOnInit(): void {
