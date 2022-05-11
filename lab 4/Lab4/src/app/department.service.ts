@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Department } from './_models/department';
 
-// @Injectable({
-//   providedIn: 'root'
-// })
+@Injectable({
+  providedIn: 'root'
+})
 export class DepartmentService {
   private depts:Department[]=[
     new Department(100,"sd","Alex"),
