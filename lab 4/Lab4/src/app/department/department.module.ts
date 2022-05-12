@@ -4,6 +4,7 @@ import { DepartmentListComponent } from './department-list/department-list.compo
 import { DepartmentAddComponent } from './department-add/department-add.component';
 import { DepartmentDetailsComponent } from './department-details/department-details.component';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    RouterModule
   ],
   exports:[
     DepartmentListComponent,

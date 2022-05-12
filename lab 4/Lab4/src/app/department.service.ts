@@ -19,6 +19,14 @@ export class DepartmentService {
     this.depts.push(dept);
     // check line above minute(1:08:36)
   }
+
+  getCurrentDepartment(id:number){
+    for (let i = 0; i < this.depts.length; i++) {
+      if(id == this.depts[i]._id)
+      return this.depts[i];
+    }
+    return null;
+  }
   getDepartment(id:number){
     for (let i = 0; i < this.depts.length; i++)
     {
