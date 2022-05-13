@@ -15,13 +15,13 @@ export class StudentService {
     return this.stds;
   }
 
-  addStudent(dept:Student){
-    this.stds.push(dept);
+  addStudent(std:Student){
+    this.stds.push(std);
   }
-  getStudent(id:number){
+  getCurrentStudent(id:number){
     for (let i = 0; i < this.stds.length; i++)
     {
-      if(this.stds[i]._id === id)
+      if(this.stds[i]._id == id)
       {
         return this.stds[i];
       }

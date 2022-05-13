@@ -12,17 +12,22 @@ export class StudentAddComponent implements OnInit {
 
   nstd:Student=new Student(0,"",0);
   
+  public save()
+  {
+    this.stdser.addStudent(this.nstd)
+    this.router.navigateByUrl('student');
+  }
 
   constructor(public stdser:StudentService,public router:Router) {
 
    }
-   public save()
-  {
-    console.log("save pressed")
-    // this.stdser.addStudent(this.nstd);
-    this.router.navigateByUrl("/student/list");
-    
-  }
+  //  public save()
+  // {
+  //   console.log("save pressed")
+  //   // this.stdser.addStudent(this.nstd);
+  //   this.router.navigateByUrl("/student/list");
+     
+  // }
 
   ngOnInit(): void {
   }

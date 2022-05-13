@@ -27,15 +27,15 @@ export class DepartmentService {
     }
     return null;
   }
-  getDepartment(id:number){
-    for (let i = 0; i < this.depts.length; i++)
-    {
-      if(this.depts[i]._id === id)
-      {
-        return this.depts[i];
-      }
-    }
-    return null;
-  }
+  // getDepartment(id:number){
+  //   for (let i = 0; i < this.depts.length; i++)
+  //   {
+  //     if(this.depts[i]._id === id)
+  //     {
+  //       return this.depts[i];
+  //     }
+  //   }
+  //   return null;
+  // }
   constructor() { }
 }

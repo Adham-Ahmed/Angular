@@ -3,17 +3,20 @@ import { CommonModule } from '@angular/common';
 import { StudentListComponent } from './student-list/student-list.component';
 import { StudentAddComponent } from './student-add/student-add.component';
 import { FormsModule } from '@angular/forms';
-
+import { StudentDetailsComponent } from './student-details/student-details.component';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
   declarations: [
     StudentListComponent,
-    StudentAddComponent
+    StudentAddComponent,
+    StudentDetailsComponent
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    RouterModule
   ],
   exports: [
     StudentListComponent,
