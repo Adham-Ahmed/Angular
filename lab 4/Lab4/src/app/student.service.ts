@@ -13,17 +13,11 @@ export class StudentService {
   }
 
   addStudent(std:Student){
-    this.stds.push(std);
+    // this.stds.push(std);
+    return this.http.post<Student>(this.url,std);
+
   }
   getCurrentStudent(id:number){
-    // for (let i = 0; i < this.stds.length; i++)
-    // {
-    //   if(this.stds[i]._id == id)
-    //   {
-    //     return this.stds[i];
-    //   }
-    // }
-    // return null;
     console.log(this.url+id)
     return this.http.get<Student>(this.url+id);
 

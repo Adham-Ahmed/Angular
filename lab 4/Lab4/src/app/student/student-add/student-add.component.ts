@@ -14,7 +14,7 @@ export class StudentAddComponent implements OnInit {
   
   public save()
   {
-    this.stdser.addStudent(this.nstd)
+    this.stdser.addStudent(this.nstd).subscribe()
     this.router.navigateByUrl('student');
   }
 
