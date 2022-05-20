@@ -14,7 +14,7 @@ export class DepartmentAddComponent implements OnInit {
   ndept:Department=new Department(0,"","");
   public save()
   {
-    this.deptser.addDepartment(this.ndept)
+    this.deptser.addDepartment(this.ndept).subscribe()
     this.router.navigateByUrl('department');
   }
   constructor(public deptser:DepartmentService, public router:Router) { }

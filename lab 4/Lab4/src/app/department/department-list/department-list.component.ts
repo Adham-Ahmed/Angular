@@ -18,7 +18,10 @@ export class DepartmentListComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.deptlst= this.deptser.getAllDepartments();
+    this.deptser.getAllDepartments().subscribe(data =>
+     {
+         this.deptlst = data;
+     });
   }
 
 }

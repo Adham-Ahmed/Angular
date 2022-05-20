@@ -10,14 +10,18 @@ import { Department } from 'src/app/_models/department';
 })
 export class DepartmentDetailsComponent implements OnInit {
   public currentDepartment: Department|null=new Department(0,"","");
-  id=0;
+  // id=0;
   constructor(public ac:ActivatedRoute, public deptser:DepartmentService) { }
   
   
   
   ngOnInit(): void {
-    this.id=this.ac.snapshot.params['id'];
-    this.currentDepartment=this.deptser.getCurrentDepartment(this.id);
+    this.ac.params.subscribe(a=>{
+      console.log(a['id'])
+      this.deptser.getCurrentDepartment(a['id']).subscribe(d=>{this.currentDepartment=d})//d=>{this.dept=d}
+    })
+    // this.id=this.ac.snapshot.params['id'];
+    // this.currentDepartment=this.deptser.getCurrentDepartment(this.id).subscribe();
     // this.currentDepartment=this.deptser.showDetails() 
     // insert department that has been pressed on from department list "details " button"
   }
