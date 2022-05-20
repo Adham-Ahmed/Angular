@@ -18,7 +18,11 @@ export class StudentListComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.stdlst= this.stdser.getAllStudents();
+    this.stdser.getAllStudents().subscribe(
+      data=>{
+        this.stdlst=data;
+      }
+    );
   }
 
 }

@@ -20,10 +20,6 @@ export class DepartmentDetailsComponent implements OnInit {
       console.log(a['id'])
       this.deptser.getCurrentDepartment(a['id']).subscribe(d=>{this.currentDepartment=d})//d=>{this.dept=d}
     })
-    // this.id=this.ac.snapshot.params['id'];
-    // this.currentDepartment=this.deptser.getCurrentDepartment(this.id).subscribe();
-    // this.currentDepartment=this.deptser.showDetails() 
-    // insert department that has been pressed on from department list "details " button"
   }
 
 }
