@@ -1,3 +1,17 @@
-<p>Id:{{currentDepartment?._id}}</p>
-<p>Name:{{currentDepartment?.name}}</p>
-<p>Location:{{currentDepartment?.location}}</p>
+
+<!-- make this look better -->
+
+<ul class="list-group">
+    <li class="list-group-item " style="background-color:rgb(211, 208, 208)">
+        <p>Id :<br><hr> <strong>{{currentDepartment?._id}}</strong></p>
+    </li>
+    <br>
+    <li class="list-group-item "style="background-color:rgb(211, 208, 208)">
+        <p>Name:<br><hr><strong>{{currentDepartment?.name}}</strong></p>
+    </li>
+    <br>
+    <li class="list-group-item "style="background-color:rgb(211, 208, 208)">
+    <p>Location:<br><hr><strong>{{currentDepartment?.location}}</strong></p>
+    </li>
+    <br>
+  </ul>
